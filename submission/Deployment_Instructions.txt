@@ -1,0 +1,71 @@
+Technologies:
+
+    The application development was done using the following technologies.
+
+        1. Java 1.8
+        2. Spring Boot
+        3. Maven
+        
+Packaging:
+
+    For the application, I used the JAR packaging.
+    
+Instruction for Running the application using IDE:
+
+    Please follow below steps to import application in your system's IDE.
+    
+        Step-1: Import this application as a "Spring Boot Maven" project in your IDE.
+        Step-2: Install all the dependencies which are defined in "POM.XML" file using the "Maven Install".
+        Step-3: You can run the application from the main method which is defined in "CognizantAssignmentBackendApplication.java" file.
+        Step-4: Now follow the execution instructions
+    
+Instruction for Running the application using Command Prompt:
+
+    As mentioned above, I am using the JAR packaging for the application.
+    
+    So for Running the application in the local system. Please follow the below steps
+    
+        Step-1: Please find "CognizantAssignmentBackend.jar" file in the same folder where this particular file is present.
+        Step-2: Open the "CMD.EXE" (Command Prompt) of your system.
+        Step-3: Navigate to the folder where "CognizantAssignmentBackend.jar" is present.
+        Step-4: Now use the below command in command prompt to run the application.
+            Command: "java -jar CognizantAssignmentBackend.jar"
+        
+        Step-5: Now the application is in Running condition. Please follow the execution instructions.
+        
+Execution instructions:
+
+    Please follow the below steps to run the normal flow of the application.
+        
+        Step-1: First you will see the welcome message along with application instruction for CSV & XML file.
+        Step-2: Now application will ask for the file which you want to process.
+            Example: 
+                Please provide the complete file path with file name:
+                D:\Office\Cognizant\Assignment\assignment\records.csv
+            
+        Step-3: After providing the input file path, now the application will ask for the file path for the generated report which will be an output of a given input file.
+            Note: Application will create a new file with filename "failed_report.csv" on the given path for both type of input file (CSV or XML)
+            Example:
+                Please provide the path for downloading the file:
+                D:\Office\Cognizant\Assignment\assignment
+                
+        Step-4: Application will start processing based on a given file.
+        Step-5: After processing, the application will create an output file with filename "failed_report.csv" for the failed records with the below columns in CSV format.
+            1. Transaction Reference
+            2. Description
+            3. Failure Message
+            
+        Step-6: After that, the application will print the logs on the console for successfully processed records and for failed records separately.
+            Example:
+            
+                List of successfully processed records
+
+                    130498  NL69ABNA0433647324      Tickets for Peter Theuß         26.9    -18.78  8.12    Successfully processed
+                    147674  NL93ABNA0585619023      Subscription from Peter Dekker  74.69   -44.91  29.78   Successfully processed
+                    
+                List of failed records
+
+                    167875  NL93ABNA0585619023      Tickets from Erik de Vries      5429.0  -939.0  6368.0  End balance is not valid.       
+                    165102  NL93ABNA0585619023      Tickets for Rik Theuß           3980.0  1000.0  4981.0  End balance is not valid.
+        
+        Step-7: Now the application will exit.

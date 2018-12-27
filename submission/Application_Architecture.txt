@@ -1,0 +1,17 @@
+Technologies:
+
+    The application development was done using the following technologies.
+
+        1. Java 1.8
+        2. Spring Boot
+        3. Maven
+        
+Application Architecture:
+
+    I created the Spring Boot Maven application. And for the application, I used the JAR packaging.
+    
+    This application is a stand-alone application or we can refer this application is one of the Utility which will be used for processing the Rabobank Customer Statement.
+    
+    This application will accept the CSV or XML file format with the specific format with is defined inside the "records.csv" for the CSV file or "records.xml" for the XML file.
+    
+    This application also gives the different types of the messages and logs on the console based on conditions provided inside the application.
